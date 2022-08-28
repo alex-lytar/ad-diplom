@@ -256,45 +256,63 @@
             <label class="search-box__label" for="search"><span class="visually-hidden">Поле для поиска по сайту.
                   Введите ваш посковой запрос</span></label>
             <input type="search" id="search" class="search" placeholder="Найти..." title="Поиск по сайту" autocomplete>
-            <button class="search-btn" title="Кнопка поиска"><img class="search-btn__img" src="../svg/search.svg"
+            <button class="search-btn" title="Кнопка поиска"><img class="search-btn__img" src="svg/search.svg"
                   width="18" alt="Иконка лупы"><span class="visually-hidden">Кнопка поиска</span></button>
          </form>
          <form class="subscribe" action="any.php">
             <h2 class="subscribe__title title-underline">Рассылка</h2>
+            <label class="email">
             <span class="visually-hidden">Поле для ввода Вашего email адреса</span>
             <input class="subscribe__input-email" type="email" required placeholder="Ваш email-адрес"
                title="Поле ввода email адреса">
+            </label>
             <button class="subscribe__submit-email submit-btn" type="submit">подписаться<span
                   class="visually-hidden">Кнопка
                   подписки на рассылку</span></button>
          </form>
          <div class="hashtags-box">
             <h2 class="hashtags-title title-underline">теги</h2>
-            <div class="hashtags-box__items">
+            <ul class="hashtags-box__items">
+               <li class="hashtag-li">
                <a href="#0" class="hashtag-link">fashion</a>
+               </li>
+               <li class="hashtag-li">
                <a href="#0" class="hashtag-link">music</a>
+               </li>
+               <li class="hashtag-li">
                <a href="#0" class="hashtag-link">lifestyle</a>
+               </li>
+               <li class="hashtag-li">
                <a href="#0" class="hashtag-link">art</a>
+               </li>
+               <li class="hashtag-li">
                <a href="#0" class="hashtag-link">interior</a>
+               </li>
+               <li class="hashtag-li">
                <a href="#0" class="hashtag-link">travel</a>
+               </li>
+               <li class="hashtag-li">
                <a href="#0" class="hashtag-link">food</a>
+               </li>
+               <li class="hashtag-li">
                <a href="#0" class="hashtag-link">health</a>
-            </div>
+               </li>
+            </ul>
          </div>
          <div class="topic-box">
             <h2 class="topic-title title-underline">темы</h2>
             <ul class="topic-box__list">
-               <li class="topic-box__item"><a href="#0" class="topic-link">Красота</a><sup class="topic-suptxt">12</sup>
+               <li class="topic-box__item"><a href="#0" class="topic-link">Красота</a><span class="topic-suptxt">12</span>
                </li>
-               <li class="topic-box__item"><a href="#0" class="topic-link">Здоровье</a><sup class="topic-suptxt">4</sup>
+               <li class="topic-box__item"><a href="#0" class="topic-link">Здоровье</a><span class="topic-suptxt">4</span>
                </li>
-               <li class="topic-box__item"><a href="#0" class="topic-link">Образ жизни</a><sup
-                     class="topic-suptxt">145</sup></li>
-               <li class="topic-box__item"><a href="#0" class="topic-link">Музыка</a><sup class="topic-suptxt">28</sup>
+               <li class="topic-box__item"><a href="#0" class="topic-link">Образ жизни</a><span
+                     class="topic-suptxt">145</span></li>
+               <li class="topic-box__item"><a href="#0" class="topic-link">Музыка</a><span class="topic-suptxt">28</span>
                </li>
-               <li class="topic-box__item"><a href="#0" class="topic-link">Спорт</a><sup class="topic-suptxt">62</sup>
+               <li class="topic-box__item"><a href="#0" class="topic-link">Спорт</a><span class="topic-suptxt">62</span>
                </li>
-               <li class="topic-box__item"><a href="#0" class="topic-link">Йога</a><sup class="topic-suptxt">8</sup>
+               <li class="topic-box__item"><a href="#0" class="topic-link">Йога</a><span class="topic-suptxt">8</span>
                </li>
             </ul>
          </div>
@@ -403,7 +421,7 @@
 
 
 
-   <div class="popup__container">
+   <div class="popup__container_hidden">
       <div class="popup">
          <button type="button" class="popup__close-btn">
             <span class="visually-hidden">Кнопка закрытия окна</span>
@@ -414,8 +432,8 @@
          <form action="any.php" method="get" class="popup__form">
             <div class="popup__select">
                <label for="attendance" class="popup__select-label">Как часто вы заходите на сайт?</label>
-               <select name="attendance" id="attendance" class="popup__select-field" required>
-                  <option value="Почти каждый день">Почти каждый день</option>
+               <select name="attendance" id="attendance" class="popup__select-field">
+                  <option value="Почти каждый день" selected>Почти каждый день</option>
                   <option value="Раз в несколько дней">Раз в несколько дней</option>
                   <option value="Раз в несколько недель">Раз в несколько недель</option>
                   <option value="Несколько раз в год">Несколько раз в год</option>
