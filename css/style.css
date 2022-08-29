@@ -564,7 +564,7 @@ input:focus {
 .hashtags-box__items {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 6px;
+  row-gap: 20px;
   column-gap: 4px;
 }
 
